@@ -33,3 +33,7 @@ font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Dej
     font-family: 'amaticbold', sans-serif;
     font-size: 26px;
 }
+
+ul.paginate li a {
+    transition: background-color .3s;
+}
