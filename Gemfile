@@ -52,3 +52,6 @@ gem 'will_paginate', '~> 3.0.5'
 
 # Gemfile for simple form
 gem 'simple_form'
+
+# Gemfile for Devise
+gem 'devise', '>= 3.2.4'
