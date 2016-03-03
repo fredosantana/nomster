@@ -35,7 +35,7 @@ font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Dej
 }
 
 .digg_pagination {
-  background: white;
+  
   cursor: default;
   /* self-clearing method: */ }
   .digg_pagination a, .digg_pagination span, .digg_pagination em {
@@ -44,18 +44,16 @@ font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Dej
     float: left;
     margin-right: 1px; }
   .digg_pagination .disabled {
-    color: #999999;
-    border: 1px solid #dddddd; }
+    color: #999999;}
   .digg_pagination .current {
     font-style: normal;
     font-weight: bold;
-    background: #2e6ab1;
+    background: #C390D4;
     color: white;
-    border: 1px solid #2e6ab1; }
+    border: 1px solid #C390D4; }
   .digg_pagination a {
     text-decoration: none;
-    color: #105cb6;
-    border: 1px solid #9aafe5; }
+    color: #C390D4; }
     .digg_pagination a:hover, .digg_pagination a:focus {
       color: #000033;
       border-color: #000033; }
