@@ -15,6 +15,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+h1 {
+    font-size: 24px;
+}
+
+a {
+    color: #391339;
+}
+
+a:hover {
+    color: #C390D4;
+    text-decoration: none;
+}
+
 body {
     background: url('/assets/pink_rice.png');
     /* Verdana-based sans serif stack */
@@ -30,8 +43,8 @@ font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Dej
 
 .navbar-inverse .navbar-brand {
     color: #C390D4;
-    font-family: 'amaticbold', sans-serif;
-    font-size: 26px;
+    font-family: 'seasideresortnfregular', sans-serif;
+    font-size: 36px;
 }
 
 .digg_pagination {
