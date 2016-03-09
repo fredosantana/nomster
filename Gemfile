@@ -55,3 +55,9 @@ gem 'simple_form'
 
 # Gemfile for Devise
 gem 'devise', '>= 3.2.4'
+
+# Gemfile for Geocoder
+gem "geocoder"
+
+# Gemfile for Figaro
+gem "figaro"
