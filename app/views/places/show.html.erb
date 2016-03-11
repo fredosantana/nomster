@@ -7,22 +7,18 @@
 <% if @place.latitude.present? && @place.longitude.present? %>  
     
 <script>
-
 function initMap() {
   var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: myLatLng
   });
-
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
     title: 'Hello World!'
   });
 }
-
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
@@ -79,10 +75,11 @@ function initMap() {
     <div class="col-xs-12 col-sm-6">
         <blockquote>
             <% if comment.humanized_rating.present? %>
-                <b><%= comment.rating %></b> - 
+                <b><%= comment.humanized_rating %></b> - 
             <% end %>
                 <%= comment.message %>
             <small><%= comment.user.email %></small>
         </blockquote>
     </div>
 <% end %>
+
