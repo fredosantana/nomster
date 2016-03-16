@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-<<<<<<< HEAD
+
     belongs_to :user
     belongs_to :place
     
@@ -14,6 +14,5 @@ class Comment < ActiveRecord::Base
     def humanized_rating
         RATINGS.invert[self.rating]
     end
-=======
->>>>>>> 4f4577d132102eeaa35fb3a37641914140bc1fe6
+
 end
