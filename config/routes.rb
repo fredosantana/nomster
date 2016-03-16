@@ -2,13 +2,8 @@ Nomster::Application.routes.draw do
   devise_for :users
     root 'places#index'
     resources :places do
-<<<<<<< HEAD
-    resources :comments, only: :create
-=======
       resources :comments, only: :create
     end
->>>>>>> c4d6d315798cca05fe9a0a1f5876441eb15e3af9
-  end
     
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
