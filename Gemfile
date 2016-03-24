@@ -61,3 +61,6 @@ gem "geocoder"
 
 # Gemfile for Figaro
 gem "figaro"
+
+# Gemfile for Carrierwave
+gem 'carrierwave'
