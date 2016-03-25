@@ -64,3 +64,6 @@ gem "figaro"
 
 # Gemfile for Carrierwave
 gem 'carrierwave'
+
+# Gemfile for Fog
+gem "fog", "~> 1.3.1"
