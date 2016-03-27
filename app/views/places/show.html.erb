@@ -118,12 +118,17 @@ function initMap() {
 <br />
 <br />
   <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture, width: 500 %>
-    <br />
-    <%= photo.caption %>
-    <br />
+    <div class="col-xs-12 col-sm-6">
+      <blockquote>
+        <% if photo.humanized_picture.present? %>
+      <b><%= image_tag photo.picture, width:500 %></b> -
+        <% end %>
+        <%= photo.caption %>
+      </blockquote>
+    </div>
   <% end %>
 <% end %>
+
 
 
   
