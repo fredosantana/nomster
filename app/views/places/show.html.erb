@@ -49,7 +49,7 @@ function initMap() {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add a  Comment</h4>
+        <h4 class="modal-title" id="myModalLabel">Add a Comment</h4>
       </div>
       
         <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
@@ -65,6 +65,14 @@ function initMap() {
     </div>
   </div>
 </div>
+
+<% @place.photos.each do |photo| %>
+  <div class="booyah-box col-xs-10 col-xs-offset-1">
+      <%= image_tag photo.picture, :class => "style_image" %>
+      <%= photo.caption %>
+  </div>
+<% end %>
+
 
 <div class="col-xs-10 col-xs-offset-1">
     <h1 class="pull-left">Comments</h1>
@@ -92,7 +100,6 @@ function initMap() {
 
 <!-- Button trigger modal -->
 
-
 <!-- Photo Modal -->
 <div class="modal fade" id="myPhotoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -111,21 +118,14 @@ function initMap() {
       <div class="modal-footer">
         <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+      </div>
     </div>
   </div>
 </div>
 <br />
 <br />
   
-<% @place.photos.each do |photo| %>
-    <div class="col-xs-12 col-sm-6">
-      <blockquote>
-        <%= image_tag photo.picture, width: 500 %>
-        <%= photo.caption %>
-      </blockquote>
-    </div>
-  <% end %>
+
 <% end %>
 
 
