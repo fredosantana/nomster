@@ -18,16 +18,6 @@
               </blockquote>
             </div>
         <% end %>
-        <% if place.photos.present? %>
-            <div class="col-xs-12 col-sm-6">
-              <blockquote>
-                <% if place.photos.last.humanized_picture.present? %>
-              <b><%= image_tag photo.picture, width:500 %></b> -
-                <% end %>
-                <%= place.photos.last.caption %>
-              </blockquote>
-            </div>
-        <% end %>
     </div>
 <% end %>
     <div class="digg_pagination col-xs-10 col-xs-offset-1">
