@@ -134,4 +134,7 @@ blockquote p {
 
 .style_image {
   border-style: dotted;
+  border-width: 5px;
+  max-width: 600px;
+  position: relative;
 }
