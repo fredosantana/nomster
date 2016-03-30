@@ -7,4 +7,8 @@ class Place < ActiveRecord::Base
     
     validates :name,:description,:address,:presence => true
     validates :name,:length => { minimum: 4 }
+
+    def last_comment
+      self.comments.order("id ASC").last
+  end
 end
