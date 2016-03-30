@@ -49,7 +49,7 @@
         <% if place.comments.present? %>
             <div class="col-xs-12">
               <blockquote>
-                <% if place.comments.last.humanized_rating.present? %>
+                <% if place.comments.order("id ASC").last.humanized_rating.present? %>
                   <b><%= place.comments.last.humanized_rating %></b> -
                 <% end %>
                 <%= place.comments.last.message %>
